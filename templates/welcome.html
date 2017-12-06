@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Message Matrix</title>
+</head>
+
+<body>
+  <h1>Message Matrix</h1>
+  <p>Hello, welcome to Joe's message matrix! You may send him a message in the field below.</p>
+  <input id="message"></input>
+  <br>
+  <button onclick="sendmessage()">Submit</button>
+</body>
+
+<script>
+  function sendmessage(){
+    var message = document.getElementById('message').value
+    url = "/send/"+message
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.send();
+  }
+
+</script>
+
+</html>
