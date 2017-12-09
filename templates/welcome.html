@@ -57,12 +57,12 @@
     </div>
     <br>
     <h2>What is this?</h2>
-    <p>Every messages submitted through this website are displayed on an LED matrix in my home.</p>
+    <p>The message matrix is an internet connected display YOU can send messages too. Submit a message and it will be displayed in my home. Yes <i>really</i>.</p>
     <video width="100%" height="100%" loop autoplay>
       <source src="static/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <p>For more details about how this works read the writeup on GitHub.</p><a>link</a>
+    <p>If you're interested in building your own please see the writeup on GitHub.</p><a href="https://github.com/JosephSamela/messagematrix">link</a>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -70,13 +70,13 @@
 <script>
   function sendmessage(){
     var message = document.getElementById('message').value
-    if (message == ""){
-      message = "none"
-    }
-    url = "/send/"+message
+    post = 'message='+message
+    url = "/post"
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.send();
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+    xhr.send(post);
+    console.log(post)
     document.getElementById('message').value = "Message Sent!";
     document.getElementById('message').disabled = true;
     document.getElementById('submitbutton').disabled = true;
