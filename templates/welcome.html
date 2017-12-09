@@ -12,36 +12,57 @@
 
 <body>
 
-  <div class="col-xs-12">
-    <center>
-      <h1>Message Matrix</h1>
-      <p>Welcome to Joe's message matrix! You may send him a message in the field below.</p>
-      <div class="col-xs-12 col-md-6 col-lg-4">
-        <textarea id="message" maxlength="140" class="form-control"></textarea>
-      </div>
-      <div class="col-xs-12">
-        <br>
-        <button class="btn btn-primary" onclick="sendmessage()">Submit</button>
-      </div>
-    </center>
-    <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-8 col-lg-6 mx-auto">
-          <div class="card" style="padding:1em">
-            <div class="card-block">
-              <h4 class="card-title">Recent Messages</h4>
-              <h6 class="card-subtitle mb-2 text-muted">See what others are saying!</h6>
-              <p class="card-text">This is a message</p>
-              <p class="card-text">This is a second message</p>
-              <p class="card-text">This is a third message</p>
-              <p class="card-text">This is another OMG a fourth message!</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
+  <div class="col-xs-12 col-md-8 col-lg-6 mx-auto">
+    <h1>Message Matrix</h1>
+    <p>Welcome to my message matrix! Send me a message in the field below.</p>
+    <textarea id="message" maxlength="140" class="form-control"></textarea>
+    <div class="col-xs-12">
+      <br>
+      <button id="submitbutton" class="btn btn-primary" onclick="sendmessage()">Submit</button>
     </div>
-
+    <br>
+    <h2>Recent Messages</h2>
+    <p>Here are what people have been saying recently!</p>
+    <div class="row">
+      <div class="card">
+        <div class="card-block">
+          <p id="message1" class="card-text">{{ message1 }}</p>
+          <h6 class="card-subtitle mb-2 text-muted" style="margin:0px">{{ message1timestamp }}</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-block">
+          <p id="message2" class="card-text">{{ message2 }}</p>
+          <h6 class="card-subtitle mb-2 text-muted" style="margin:0px">{{ message2timestamp }}</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-block">
+          <p id="message3" class="card-text">{{ message3 }}</p>
+          <h6 class="card-subtitle mb-2 text-muted" style="margin:0px">{{ message3timestamp }}</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-block">
+          <p id="message4" class="card-text">{{ message4 }}</p>
+          <h6 class="card-subtitle mb-2 text-muted" style="margin:0px">{{ message4timestamp }}</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-block">
+          <p id="message5" class="card-text">{{ message5 }}</p>
+          <h6 class="card-subtitle mb-2 text-muted" style="margin:0px">{{ message5timestamp }}</h6>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h2>What is this?</h2>
+    <p>Every messages submitted through this website are displayed on an LED matrix in my home.</p>
+    <video width="100%" height="100%" loop autoplay>
+      <source src="static/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>For more details about how this works read the writeup on GitHub.</p><a>link</a>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -56,7 +77,9 @@
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.send();
-    console.log("complete")
+    document.getElementById('message').value = "Message Sent!";
+    document.getElementById('message').disabled = true;
+    document.getElementById('submitbutton').disabled = true;
   }
 </script>
 

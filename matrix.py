@@ -4,6 +4,7 @@ import Image
 import ImageDraw
 import ImageFont
 import time
+import json
 import datetime
 from rgbmatrix import Adafruit_RGBmatrix
 
@@ -18,9 +19,19 @@ def generatetext(message, height):
 
 #Log message to file
 def log(message):
-    timestamp = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')  
-    with open("log.txt", "a") as file:
-        file.write("\n"+timestamp + " $ " + message)
+    #Generate timestamp
+    timestamp = datetime.datetime.fromtimestamp(time.time()).strftime('%b %d, %Y %I:%M%p EST')
+    #Open log from file
+    with open("log.json") as logfile:
+        log = json.load(logfile)
+    #Add new message element to log dictionary
+    arrayOfMessageNames = list(map(int, log))
+    mostRecentMessage = max(arrayOfMessageNames)
+    newMessage = mostRecentMessage + 1
+    log[newMessage] = {"message":message, "timestamp":timestamp}
+    #Write appended log back to file
+    with open("log.json", 'w') as logfile:
+        json.dump(log, logfile)
 
 # Display string message on LED matrix
 def display(matrix, message, height):
