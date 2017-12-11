@@ -1,1 +1,26 @@
-{"3": {"message": "3This application turns images into lego mosaics compatible with Lego Digital Designer", "timestamp": "12345678"}, "0": {"message": "0This application turns images into lego mosaics compatible with Lego Digital Designer", "timestamp": "12345678"}, "15": {"message": "dfgdksaw", "timestamp": "Dec 09, 2017 03:41PM EST"}, "12": {"message": "uytyuvb", "timestamp": "Dec 09, 2017 03:37PM EST"}, "5": {"message": "5This application turns images into lego mosaics compatible with Lego Digital Designer", "timestamp": "12345678"}, "17": {"message": "!@#$^", "timestamp": "Dec 09, 2017 03:45PM EST"}, "16": {"message": "!@#%", "timestamp": "Dec 09, 2017 03:44PM EST"}, "10": {"message": "rtyuiotrertyui", "timestamp": "Dec 09, 2017 03:32PM EST"}, "2": {"message": "2This application turns images into lego mosaics compatible with Lego Digital Designer", "timestamp": "12345678"}, "18": {"message": "dfghj", "timestamp": "Dec 09, 2017 03:48PM EST"}, "9": {"message": "wertyu", "timestamp": "Dec 09, 2017 03:31PM EST"}, "14": {"message": "dfgdfgd", "timestamp": "Dec 09, 2017 03:41PM EST"}, "13": {"message": "tyuigf", "timestamp": "Dec 09, 2017 03:37PM EST"}, "8": {"message": "wertyu", "timestamp": "Dec 09, 2017 03:30PM EST"}, "7": {"message": "ertyu", "timestamp": "Dec 09, 2017 03:28PM EST"}, "4": {"message": "4This application turns images into lego mosaics compatible with Lego Digital Designer", "timestamp": "12345678"}, "6": {"message": "esrtyuio", "timestamp": "Dec 09, 2017 03:27PM EST"}, "1": {"message": "1This application turns images into lego mosaics compatible with Lego Digital Designer", "timestamp": "12345678"}, "11": {"message": "yuyt", "timestamp": "Dec 09, 2017 03:33PM EST"}}
+{
+  "0": {
+    "message": "Hello World!",
+    "timestamp": "Dec 11, 2017 06:40PM EST"
+  },
+  "1": {
+    "message": "Thanks for checking out the message matrix!",
+    "timestamp": "Dec 11, 2017 06:41PM EST"
+  },
+  "2": {
+    "message": "I know I need to improve the logging...",
+    "timestamp": "Dec 11, 2017 06:42PM EST"
+  },
+  "3": {
+    "message": "If you write a better solution please submit a pull request!",
+    "timestamp": "Dec 11, 2017 06:43PM EST"
+  },
+  "4": {
+    "message": "If you make a cool project from this code...",
+    "timestamp": "Dec 11, 2017 06:44PM EST"
+  },
+  "5": {
+    "message": "Let me know! I'll feature your project on the ReadMe.",
+    "timestamp": "Dec 11, 2017 06:45PM EST"
+  }
+}
