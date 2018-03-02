@@ -15,7 +15,7 @@ Awesome integration with *Home Automation* projects!
 * Music artist information!
 * Package delivery status!
 * Solar panel performance!
-* Any project can be integrated. just send a post request!
+* Any project can be integrated, just send a post request!
 
 If you can get it, you can display it with ***Message Matrix***!
 
