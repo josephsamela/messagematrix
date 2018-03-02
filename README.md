@@ -21,4 +21,13 @@ Awesome integration with *Home Automation* projects!
 
 If you can get it, you can display it with ***Message Matrix***!
 
+## Running code!
+Bundled with web inteface for testing!
+
+Start the application with:
+```
+$ python main.py
+```
+In a web-browser navigate to `host_local_address:5000` and if you see this webpage, it works!
+
 ![Demo Site](/static/demo_site.png)
