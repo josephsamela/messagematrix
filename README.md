@@ -1,5 +1,3 @@
-# LED Message Matrix
-
 ## What is LED Message Matrix?
 The message matrix is an internet connected display YOU can send messages! 
 
