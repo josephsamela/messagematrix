@@ -3,7 +3,7 @@ The message matrix is an internet connected display YOU can send messages!
 
 ![Hey Y'all!](/static/video.gif)
 
-This display has **ONE** job. Recieve message POST requests with messages and display the message!
+This display has **ONE** job. Recieve POST requests with messages and display the message!
 
 Awesome integration with *Home Automation* projects! 
 * Working on a smart weather-station? Send weater reports to the display!
@@ -17,7 +17,7 @@ Awesome integration with *Home Automation* projects!
 * Solar panel performance!
 * Any project can be integrated, just send a post request!
 
-If you can get it, you can display it with ***Message Matrix***!
+If you can POST it, you can display it with ***Message Matrix***!
 
 ## Running code!
 Bundled with web inteface for testing!
