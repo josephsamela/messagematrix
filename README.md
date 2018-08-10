@@ -20,7 +20,7 @@ Awesome integration with *Home Automation* projects!
 If you can POST it, you can display it with ***Message Matrix***!
 
 ## Running code!
-Bundled with web inteface for testing!
+For this project I'm using a 32x32 LED matrix with a Raspberry Pi using the [Adafruit RGB Matrix Hat](https://www.adafruit.com/product/2345).
 
 Start the application with:
 ```
