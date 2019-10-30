@@ -29,6 +29,3 @@ $ python main.py
 In a web-browser navigate to `host_local_address:5000` and if you see this webpage, it works!
 
 ![Demo Site](/static/demo_site.png)
-
-## Author
-* **Joe Samela** - *Initial work* - [josephsamela.github.io](https://josephsamela.github.io/)
