@@ -6,6 +6,7 @@ The message matrix is an internet connected display YOU can send messages!
 This display has **ONE** job. Recieve POST requests with messages and display the message!
 
 Awesome integration with *Home Automation* projects! 
+
 * Working on a smart weather-station? Send weater reports to the display!
 * Smart coffee maker? Get notified when your brew is ready!
 * Smart sprinkler system? Get notfications to water your plants!
